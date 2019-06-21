@@ -10,9 +10,10 @@ Pod::Spec.new do |spec|
   spec.author             = { "Ike" => "ikebanpc@gmail.com" }
   spec.platform     = :ios, "8.0"
   spec.source       = { :git => "https://github.com/jlgl-ios/OCBridge", :tag => "#{spec.version}" }
-  spec.source_files  = ["Sources/*.swift", "Sources/SwiftyBeaverBridge.h"]
-  spec.public_header_files = ["Sources/SwiftyBeaverBridge.h"]
+  spec.source_files  = ["Sources/**/*.swift", "Sources/SwiftyBeaver/SwiftyBeaverBridge.h"]
+  spec.public_header_files = ["Sources/OCBridge.h"]
   spec.requires_arc = true
   spec.swift_version = "5.0"
+  spec.dependency 'SwiftyBeaver', '1.7.0' 
   spec.static_framework  =  true
 end
