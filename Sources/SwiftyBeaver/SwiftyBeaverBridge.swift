@@ -7,7 +7,7 @@
 import SwiftyBeaver
 import Foundation
 
-//let log = SwiftyBeaver.self
+let log = SwiftyBeaver.self
 
 @objc(DDLog)
 public final class DDLog: NSObject {
